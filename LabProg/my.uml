@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bqIL4A8LEeehY8P5ZweEtQ" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_MEmMAA8MEeeywcQReLk7fg" name="Circle" visibility="protected" isLeaf="true">
+    <ownedAttribute xmi:id="_QoaVcA8MEeeywcQReLk7fg" name="radius" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Double"/>
+      <defaultValue xmi:type="uml:LiteralReal" xmi:id="_OKKU4A8NEeeywcQReLk7fg" value="1.0">
+        <name xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YN78YA8MEeeywcQReLk7fg" name="color" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wq8BUA8NEeeywcQReLk7fg" value="Red"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_G0NMQA8TEee2-7ywtkaGcQ" name="getArea"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Dnl-8A8WEee2-7ywtkaGcQ" name="Author">
+    <ownedAttribute xmi:id="_OsWF0A8WEee2-7ywtkaGcQ" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SaDtsA8WEee2-7ywtkaGcQ" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WQM40A8WEee2-7ywtkaGcQ" name="gender" type="_johk0A8WEee2-7ywtkaGcQ">
+      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_iO7UoA8WEee2-7ywtkaGcQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_NreCMA8XEee2-7ywtkaGcQ" name="Author">
+      <ownedParameter xmi:id="_Ort-QA8XEee2-7ywtkaGcQ" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_TPqDgA8XEee2-7ywtkaGcQ" name="email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_XU0iEA8XEee2-7ywtkaGcQ" name="gender" type="_johk0A8WEee2-7ywtkaGcQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8OOSwA8XEee2-7ywtkaGcQ" name="toString">
+      <ownedParameter xmi:id="_rMzRwA8aEee2-7ywtkaGcQ" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_johk0A8WEee2-7ywtkaGcQ" name="Enume">
+    <ownedLiteral xmi:id="_p_JvsA8WEee2-7ywtkaGcQ" name="M"/>
+    <ownedLiteral xmi:id="_qnZbcA8WEee2-7ywtkaGcQ" name="F"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0tndgA8WEee2-7ywtkaGcQ" name="Book">
+    <ownedAttribute xmi:id="_vSeOAA8XEee2-7ywtkaGcQ" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_zO8DkA8XEee2-7ywtkaGcQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2VMp4A8XEee2-7ywtkaGcQ" name="author" type="_Dnl-8A8WEee2-7ywtkaGcQ"/>
+    <ownedAttribute xmi:id="_LWsGsA8YEee2-7ywtkaGcQ" name="price">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q_XmcA8YEee2-7ywtkaGcQ" name="lend">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_xlgLIA8YEee2-7ywtkaGcQ" name="setQtyInStock"/>
+    <ownedOperation xmi:id="_0DcNMA8YEee2-7ywtkaGcQ" name="toString">
+      <ownedParameter xmi:id="_430QQA8aEee2-7ywtkaGcQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5DM9sA8WEee2-7ywtkaGcQ" name="Library">
+    <ownedAttribute xmi:id="_EM8AUA8ZEee2-7ywtkaGcQ" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_F-CxkA8ZEee2-7ywtkaGcQ" name="location" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RWXUsA8ZEee2-7ywtkaGcQ" name="phoneNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_hNj24A8ZEee2-7ywtkaGcQ" name="loanBook"/>
+    <ownedOperation xmi:id="_jHU04A8ZEee2-7ywtkaGcQ" name="confirmAvailability" visibility="private"/>
+  </packagedElement>
+</uml:Model>
